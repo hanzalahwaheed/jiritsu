@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Distraction LeetCode Gate",
+  "version": "0.2.0",
+  "description": "Solve a real LeetCode problem before your time-sink sites will open.",
+  "permissions": ["declarativeNetRequest", "storage", "alarms", "cookies"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "Distraction LeetCode Gate", "default_popup": "popup.html" },
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["challenge.html", "challenge.js", "challenge.css", "problems.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solve to enter Reddit</title>
+  <link rel="stylesheet" href="challenge.css" />
+</head>
+<body>
+  <header>
+    <h1>🧠 Pay the toll</h1>
+    <p class="sub" id="sub">Solve this LeetCode problem in Python to unlock your blocked sites.</p>
+    <div id="banner" class="banner hidden"></div>
+  </header>
+
+  <main>
+    <section id="problem" class="panel">
+      <div class="problem-head">
+        <span id="difficulty" class="difficulty"></span>
+        <h2 id="title">Loading a problem…</h2>
+        <a id="lc-link" href="#" target="_blank" rel="noopener" class="hidden">open on leetcode ↗</a>
+      </div>
+      <div id="content" class="content"></div>
+    </section>
+
+    <section id="solve" class="panel">
+      <div class="editor-head">
+        <span>Python 3</span>
+        <button id="reset" type="button" class="ghost">reset stub</button>
+      </div>
+      <textarea id="code" spellcheck="false" autocomplete="off"></textarea>
+      <div class="actions">
+        <button id="submit" type="button" disabled>Submit to judge</button>
+        <button id="skip" type="button" class="ghost" title="Draw a different problem">↻ new problem</button>
+      </div>
+      <pre id="result" class="result"></pre>
+    </section>
+  </main>
+
+  <script type="module" src="challenge.js"></script>
+</body>
+</html>
